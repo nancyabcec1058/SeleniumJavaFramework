@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="TestComponents.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
     <classes>
-      <class name="Cucumber.TestNGRunner">
+      <class name="Testsite.SubmitOrder">
         <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="checkOrderHistory"/>
+          <include name="tearDown"/>
+          <include name="submitOrder" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- Cucumber.TestNGRunner -->
+      </class> <!-- Testsite.SubmitOrder -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Submit Order Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

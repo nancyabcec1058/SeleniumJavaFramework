@@ -274,28 +274,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitOrder')
 data.setCell(0, 2, 'Testsite.SubmitOrder')
-data.setCell(0, 3, 3573);
+data.setCell(0, 3, 3593);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'submitOrder')
 data.setCell(1, 2, 'Testsite.SubmitOrder')
-data.setCell(1, 3, 3461);
+data.setCell(1, 3, 3398);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'productErrorValidation')
 data.setCell(2, 2, 'Testsite.ErrorValidation')
-data.setCell(2, 3, 2221);
+data.setCell(2, 3, 2412);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkOrderHistory')
-data.setCell(3, 2, 'Testsite.SubmitOrder')
-data.setCell(3, 3, 879);
+data.setCell(3, 1, 'loginErrorValidation')
+data.setCell(3, 2, 'Testsite.ErrorValidation')
+data.setCell(3, 3, 1117);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginErrorValidation')
-data.setCell(4, 2, 'Testsite.ErrorValidation')
-data.setCell(4, 3, 831);
+data.setCell(4, 1, 'checkOrderHistory')
+data.setCell(4, 2, 'Testsite.SubmitOrder')
+data.setCell(4, 3, 980);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -331,77 +331,68 @@ return data;
               <div class="chronological-class-name">Testsite.SubmitOrder</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">289 ms</span>
+                <span class="method-start">278 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitOrder({mail=mukti@myemail.com, pswd=Abc&xyz123, productName=ADIDAS ORIGINAL})</span>
-                <span class="method-start">3116 ms</span>
+                <span class="method-start">3106 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">6714 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">7080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrder({mail=nandini@mymail.com, pswd=Abc&xyz123, productName=ZARA COAT 3})</span>
+                <span class="method-start">8716 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testsite.ErrorValidation</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginErrorValidation</span>
-                <span class="method-start">6447 ms</span>
+                <span class="method-start">8775 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Testsite.SubmitOrder</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6710 ms</span>
+                <span class="method-start">9903 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">7072 ms</span>
+                <span class="method-start">11806 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Testsite.ErrorValidation</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">7282 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser</span>
-                <span class="method-start">7799 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">productErrorValidation</span>
-                <span class="method-start">9632 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Testsite.SubmitOrder</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">submitOrder({mail=nandini@mymail.com, pswd=Abc&xyz123, productName=ZARA COAT 3})</span>
-                <span class="method-start">10251 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Testsite.ErrorValidation</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">11858 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">Testsite.SubmitOrder</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13715 ms</span>
+                <span class="method-start">12114 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">14071 ms</span>
+                <span class="method-start">12599 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkOrderHistory</span>
-                <span class="method-start">15681 ms</span>
+                <span class="method-start">14683 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16570 ms</span>
+                <span class="method-start">15678 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Testsite.ErrorValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productErrorValidation</span>
+                <span class="method-start">17593 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">20012 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

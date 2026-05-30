@@ -4,15 +4,16 @@
   <listeners>
     <listener class-name="TestComponents.TestNGListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Error Validation Test(failed)">
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
     <classes>
-      <class name="Testsite.ErrorValidation">
+      <class name="Testsite.SubmitOrder">
         <methods>
-          <include name="loginErrorValidation"/>
+          <include name="checkOrderHistory"/>
           <include name="tearDown"/>
+          <include name="submitOrder" invocation-numbers="0"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- Testsite.ErrorValidation -->
+      </class> <!-- Testsite.SubmitOrder -->
     </classes>
-  </test> <!-- Error Validation Test(failed) -->
+  </test> <!-- Submit Order Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -14,6 +14,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
@@ -41,6 +42,8 @@ public class BaseTest {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+            options.addArguments("--window-size=1920,1080");
 			driver = new ChromeDriver();
 
 		} else if (browserName.equalsIgnoreCase("edge")) {

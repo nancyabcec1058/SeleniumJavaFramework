@@ -35,6 +35,7 @@ public class CheckoutPage extends ReusableComponents {
 	}
 	public ConfirmationPage submitOrder()
 	{
+		waitforWebElementtoAppear(submit);
 		submit.click();
 		return new ConfirmationPage(driver);
 	}

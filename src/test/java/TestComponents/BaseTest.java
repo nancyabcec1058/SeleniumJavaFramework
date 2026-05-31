@@ -42,9 +42,7 @@ public class BaseTest {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			ChromeOptions options = new ChromeOptions();
-            options.addArguments("--window-size=1920,1080");
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			 WebDriverManager.edgedriver().setup();

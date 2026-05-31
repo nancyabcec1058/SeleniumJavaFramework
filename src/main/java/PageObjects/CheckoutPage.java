@@ -27,6 +27,7 @@ public class CheckoutPage extends ReusableComponents {
 	By results=By.cssSelector("[class*='ta-results']");
 	
 	public void selectCountry(String countryName) {
+		driver.manage().window().maximize();
 		Actions a = new Actions(driver);
 		a.sendKeys(country, countryName).build().perform();
 		waitforElementtoAppear(results);

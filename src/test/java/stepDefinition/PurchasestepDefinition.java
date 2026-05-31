@@ -40,7 +40,7 @@ public class PurchasestepDefinition extends BaseTest {
 	    }
 
 	    @When("^checkout (.+) and submit the order$")
-	    public void checkout_and_submit_the_order(String productName) {
+	    public void checkout_and_submit_the_order(String productName) throws InterruptedException {
 	    	cartpage = productcatalogue.goToCart();
 
 			boolean match = cartpage.verifyCartProductexist(productName);

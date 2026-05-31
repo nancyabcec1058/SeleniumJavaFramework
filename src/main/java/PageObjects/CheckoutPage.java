@@ -1,6 +1,7 @@
 package PageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -27,17 +28,18 @@ public class CheckoutPage extends ReusableComponents {
 	By results=By.cssSelector("[class*='ta-results']");
 	
 	public void selectCountry(String countryName) {
-		driver.manage().window().maximize();
 		Actions a = new Actions(driver);
 		a.sendKeys(country, countryName).build().perform();
 		waitforElementtoAppear(results);
         selectIndia.click();
 		
 	}
-	public ConfirmationPage submitOrder()
+	public ConfirmationPage submitOrder() throws InterruptedException
 	{
-		waitforWebElementtoAppear(submit);
-		submit.click();
+		
+		((JavascriptExecutor) driver)
+        .executeScript("arguments[0].click();", submit);
+		//submit.click();
 		return new ConfirmationPage(driver);
 	}
 

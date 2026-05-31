@@ -39,7 +39,7 @@ public class CheckoutPage extends ReusableComponents {
 		
 		((JavascriptExecutor) driver)
         .executeScript("arguments[0].click();", submit);
-		//submit.click();
+		//submit.click(); updated
 		return new ConfirmationPage(driver);
 	}
 
